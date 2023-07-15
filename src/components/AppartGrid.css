@@ -1,0 +1,23 @@
+.grid{
+min-height: 500px;
+background-color:#F6F6F6;
+border-radius: 25px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 1rem;
+padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        justify-content: center;
+        background-color: white;
+        padding: 0;
+    }
+}
+
+
+
+
+

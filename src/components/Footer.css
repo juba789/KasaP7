@@ -1,0 +1,16 @@
+.footer{
+background-color: black;
+color:white;
+text-align: center;
+padding: 20px;
+min-height: 100px;
+display: grid;
+place-items: center;
+
+
+}
+
+.footer__logo img{
+width: 100px;
+
+}
