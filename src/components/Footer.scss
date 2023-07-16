@@ -1,16 +1,17 @@
-.footer{
-background-color: black;
-color:white;
-text-align: center;
-padding: 20px;
-min-height: 100px;
-display: grid;
-place-items: center;
+@import '../scss/variables.scss';
 
+.footer {
+  background-color: $footer-background;
+  color: $color-tertiary;
+  text-align: center;
+  padding: 20px;
+  min-height: 100px;
+  display: grid;
+  place-items: center;
 
-}
-
-.footer__logo img{
-width: 100px;
-
+  &__logo {
+    img {
+      width: 100px;
+    }
+  }
 }

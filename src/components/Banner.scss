@@ -10,6 +10,8 @@ display: grid;
 place-items: center;
 color: white;
 }*/
+@import '../scss/variables.scss';
+
 .banner {
     background-image: url("../../public/banner\(2\).png");
     background-size: cover;
@@ -19,7 +21,7 @@ color: white;
     max-width: 100%;
     height: 223px;
     margin:auto;
-    color:white;
+    color:$color-tertiary;
     display: grid;
     place-items: center;
     font-size: 25px;

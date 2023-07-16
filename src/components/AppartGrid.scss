@@ -1,6 +1,8 @@
+@import '../scss/variables.scss';
+
 .grid{
 min-height: 500px;
-background-color:#F6F6F6;
+background-color:$grid-background;
 border-radius: 25px;
 display: flex;
 justify-content: space-between;
@@ -12,7 +14,7 @@ padding: 1rem;
 @media screen and (max-width: 768px) {
     .grid {
         justify-content: center;
-        background-color: white;
+        background-color:$grid-background-light;
         padding: 0;
     }
 }
