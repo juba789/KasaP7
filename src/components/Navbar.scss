@@ -1,0 +1,27 @@
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 2rem;
+color:#ff6060;
+font-weight: 700;
+gap: 2rem;
+     & > *:first-child{       
+    margin-right: auto;
+    }
+    & a{
+    text-decoration: none;
+    color: #ff6060;
+    &.active{
+
+        text-decoration: underline;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+    
+    }
+}
+
+
+

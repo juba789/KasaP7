@@ -1,5 +1,5 @@
 import React from 'react'
-import './AppartGrid.css'
+import './AppartGrid.scss'
 import  Appart from './Appart'
 
 
