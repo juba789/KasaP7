@@ -1,0 +1,71 @@
+@import '../scss/variables.scss';
+
+.appart__header{
+    display: flex;
+    margin-bottom: 2rem;
+    .appart__title{
+      flex-grow: 1;
+    }
+    .appart__owner__details{
+      display: flex;
+      gap:0.5rem;
+  
+    }
+    .appart__owner__badge{
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     background-color: $grid-background;
+     
+    }
+    .appart__owner__stars{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.2rem;
+      *{
+        font-size: 2rem;
+      }
+      
+       .on{
+        color: $color-primary;
+       }
+       .off{
+        color:$grid-background;
+       }
+    }
+    h1{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+         margin-block: 0;
+         }
+         h2{
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          margin-top:0.5em ;
+          margin-bottom: 0.2em;
+            
+         }
+    h3{
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+       align-items: end;
+       font-weight: 500;
+      margin-block: 0;     /*equivaut à margin-top:0 et margin-bottom:0*/
+    }
+     .appart__tags{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(100px,150px));
+      gap: 1rem;
+        span{
+         background: $color-primary;
+         color:$color-tertiary ;
+         padding:0.3em 1em;
+         border-radius: 0.7rem;
+         text-align: center;
+        }
+  }
+  }

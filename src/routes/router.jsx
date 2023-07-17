@@ -4,6 +4,7 @@ import HomePage from '../pages/HomePage';
 import Navbar from '../components/Navbar';
 import Footer from '../layout/Footer';
 import Main from '../layout/Main'
+import AppartPage from '../pages/AppartPage';
 
 const HeaderFooterLayout=()=>{
   return(
@@ -29,7 +30,7 @@ const router =createBrowserRouter ([
       },
       {
        path:'/flat',
-       element:<h1>Appartement</h1>
+       element:<AppartPage/>
       },
       {
         path:'/about',
