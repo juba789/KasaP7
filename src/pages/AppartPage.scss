@@ -3,16 +3,14 @@
 .appart-page{
 color:$color-primary;
 
-
-
-   
 .appart__description__area{
   display: flex;
   gap:1rem;
-}
-
-
-
-
+  @media screen and (max-width: 768px){
+    flex-direction:column;
+    
 
  }
+}
+
+}
