@@ -11,7 +11,7 @@ import ErrorPage from '../pages/ErrorPage';
 const HeaderFooterLayout=()=>{
   return(
     <>
-    <Navbar />
+    <Navbar />             
     <Main>
     <Outlet/>
     </Main>
