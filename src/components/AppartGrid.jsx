@@ -11,6 +11,8 @@ function AppartGrid() {
     <Appart/>
     <Appart/>
     <Appart/>
+    <Appart/>
+    <Appart/>
     </div>
   )
 }

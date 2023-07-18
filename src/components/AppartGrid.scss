@@ -1,15 +1,23 @@
 @import '../scss/variables.scss';
 
 .grid{
-min-height: 500px;
-background-color:$grid-background;
-border-radius: 25px;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-gap: 1rem;
-padding: 1rem;
-}
+    min-height: 500px;
+    background-color:$grid-background;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    & > *{
+        width: 100%;
+        max-width: 20rem;
+     }
+    
+    }
+    
+    
+  
 
 @media screen and (max-width: 768px) {
     .grid {

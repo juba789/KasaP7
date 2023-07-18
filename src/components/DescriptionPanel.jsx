@@ -1,8 +1,8 @@
 import React from "react";
-import './AppartDescription.scss';
+import './DescriptionPanel.scss';
 
-export function AppartDescription(){
-    return (<div className='appart__description' >
+export function DescriptionPanel(){
+    return (<div className='description__panel' >
             <p className='description__header'>
               <span>description</span>
               <i className="fas fa-chevron-up"></i>

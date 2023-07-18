@@ -1,18 +1,19 @@
 import React from 'react'
 import './AppartPage.scss'
-import { AppartDescription } from '../components/AppartDescription'
-import AppartBanner from '../components/AppartBanner'
+
+import ImageAppartBanner from '../components/ImageAppartBanner'
 import AppartHeader from '../components/AppartHeader'
+import { DescriptionPanel } from '../components/DescriptionPanel'
 
 
 function AppartPage() {
   return (
 <div className='appart-page'>
-     <AppartBanner/>
+     <ImageAppartBanner/>
      <AppartHeader/>
     <div className='appart__description__area'>
-     <AppartDescription />
-     <AppartDescription />
+     <DescriptionPanel/>
+     <DescriptionPanel/>
      </div>
     </div> 
     
