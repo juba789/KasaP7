@@ -2,10 +2,14 @@ import React from 'react'
 import './Appart.scss'
 import { Link } from 'react-router-dom'
 
-function Appart() {
+function Appart(props) {
   return (
     <Link to='/flat'>
-  <div className='appart'><div className='apartment__subtitle'>Titre de la location</div></div>
+    
+  <div className='appart'>
+  <img src={props.imageUrl} alt=""/>
+  <div className='apartment__subtitle'>{props.title}</div>
+  </div>
   </Link>
   )
 }
