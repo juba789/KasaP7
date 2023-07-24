@@ -3,8 +3,13 @@ import './Appart.scss'
 import { Link } from 'react-router-dom'
 
 function Appart(props) {
-  return (
-    <Link to='/flat'>
+return (
+    <Link 
+    to='/flat' 
+    state={{
+      appartId:props.id
+      }}
+    >
     
   <div className='appart'>
   <img src={props.imageUrl} alt=""/>

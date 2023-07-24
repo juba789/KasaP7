@@ -1,33 +1,36 @@
 import React from 'react'
 import './AppartHeader.scss';
 
-function AppartHeader() {
+function AppartHeader(props) {
+
+  const {name}=props.flat.host
+  const [firstName,lastName]=name.split(" ");
+ 
   return (
     <div className='appart__header'>
     <div className='appart__title'>
-        <h1>Crazy loft on canal st-martin</h1>
-        <h2>Paris,Ile de france</h2>
+        <h1>{props.flat.title}</h1>
+        <h2>{props.flat.location}</h2>
       <div className='appart__tags'>
-        <span className='appart__tag'>Cozy</span>
-        <span className='appart__tag' >Canak</span>
-        <span className='appart__tag'>Paris 10</span>
+        {props.flat.tags.map((tag)=>(<span key={tag}>{tag}</span>))}
       </div>  
     </div>  
         
     <div className='appart__owner'>
         <div className='appart__owner__details'>
-        <h3><span>Alexandre</span>
-            <span>Dumas</span>
+        <h3><span>{firstName}</span>
+            <span>{lastName}</span>
         </h3>
-        <div className='appart__owner__badge'></div>
+        <div className='appart__owner__badge'>
+          <img src={props.flat.host.picture} />
+        </div>
+       
         </div>
         <div className='appart__owner__stars'>
-            <span className='on'>&#9733;</span>
-            <span className='on'>&#9733;</span>
-            <span className='on'>&#9733;</span>
-            <span className='off'>&#9733;</span>
-            <span className='off'>&#9733;</span>
-        </div>
+         { [1,2,3,4,5].map((num)=>(
+            <span key={num} className={props.flat.rating>= num? "on" : ""}>&#9733;</span>
+          ))}
+          </div>
     </div>  
     </div>
   )

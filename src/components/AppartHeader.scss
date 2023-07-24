@@ -14,7 +14,7 @@
    .appart__owner{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;       /*possibilité de mettre cette ligne uniquement dans le medias quéries*/
     @media screen and (max-width: 768px){
       flex-direction: row;
       
@@ -32,7 +32,7 @@
 
     }
 
-    .appart__owner__badge{
+    .appart__owner__badge img{
      height: 50px;
      width: 50px;
      border-radius: 50%;
@@ -44,6 +44,7 @@
       justify-content: center;
       align-items: center;
       gap: 0.2rem;
+      color:$grid-background;
       *{
         font-size: 2rem;
       }
@@ -51,9 +52,7 @@
        .on{
         color: $color-primary;
        }
-       .off{
-        color:$grid-background;
-       }
+       
     }
     h1{
         font-size: 36px;
