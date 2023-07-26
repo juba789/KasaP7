@@ -1,13 +1,17 @@
 import React from 'react'
 import './Banner.scss'
 
-function Banner() {
+function Banner(props) {
+  const bannerStyle = {
+    backgroundImage: `url(${props.imageUrl})`,
+  };
+
   return (
-    <div className='banner'>
-       {/*<img src='banner.png' alt='banner'/>*/}
-        <h2>Chez vous,partout et ailleurs</h2>
+    <div className='banner' style={bannerStyle}>
+      <h2>{props.title}</h2>
     </div>
-  )
+  );
 }
+
 
 export default Banner

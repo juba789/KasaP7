@@ -10,7 +10,7 @@ function HomePage() {
   return (
     <>
     
-       <Banner/>
+    <Banner imageUrl='homeBanner.png' title='Chez vous, partout et ailleurs' />
        <AppartGrid/>
     
     </>

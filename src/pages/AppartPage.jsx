@@ -29,11 +29,11 @@ const location =useLocation();
  
   return (
 <div className='appart-page'>
-     <ImageAppartBanner  imageUrl={flat?.cover}/>
+     <ImageAppartBanner  pictures={flat?.pictures}/>
      <AppartHeader flat={flat} />
     <div className='appart__description__area'>
      <DescriptionPanel  title ="Description" content={flat.description} />
-     <DescriptionPanel title ="Equipements" content={flat.equipments.map((eq)=><li>{eq}</li>)} />
+     <DescriptionPanel title ="Equipements" content={flat.equipments.map((eq,i)=><li key={i}>{eq}</li>)} />
      </div>
     </div> 
     
