@@ -3,7 +3,7 @@ import './DescriptionPanel.scss';
 
 
 export function DescriptionPanel(props){
-  const [isContentVisible,setIsContentVisible]= useState(true)
+  const [isContentVisible,setIsContentVisible]= useState(false)
 
   const showContent =()=>{
       setIsContentVisible(!isContentVisible)
