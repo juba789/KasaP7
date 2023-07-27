@@ -10,8 +10,8 @@
     gap: 1rem;
     padding: 1rem;
     & > *{
-        width: 100%;
-        max-width: 20rem;
+        width: 32%;
+        
      }
     
     }
@@ -24,9 +24,12 @@
         justify-content: center;
         background-color:$grid-background-light;
         padding: 0;
+        & > *{
+            width: 100%;
+           
+         }
     }
 }
-
 
 
 

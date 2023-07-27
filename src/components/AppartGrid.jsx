@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 
 function AppartGrid() {
   const [appartements,setAppartemens] =useState([]);
+  
   useEffect(fetchAppartements,[]);
 
 function fetchAppartements(){ 
@@ -20,7 +21,7 @@ fetch("db.json")
   return (
     <div className='grid'>
       {appartements.map((appartment)=>(
-    <Appart title={appartment.title} imageUrl={appartment.cover} id={appartment.id}/>
+    <Appart title={appartment.title} imageUrl={appartment.cover} id={appartment.id} key={appartment.id} />
       ))}
  
     </div>

@@ -11,7 +11,7 @@ function HomePage() {
     <>
     
     <Banner imageUrl='homeBanner.png' title='Chez vous, partout et ailleurs' />
-       <AppartGrid/>
+    <AppartGrid/>
     
     </>
   )

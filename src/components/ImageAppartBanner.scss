@@ -18,10 +18,10 @@
          outline: none;
         }
         &.btn-next{
-            left: 0;
+            right: 0;
         }
         &.btn-previous{
-            right:0;
+            left:0;
         }
     }
     .image__container{
@@ -42,8 +42,23 @@
             opacity: 1;
         }
     }
+   
   
     }
-
+    .image__position {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color:$color-tertiary ;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 375px) {
+        .image__position {
+            display: none;
+        }
+    }
 
 }

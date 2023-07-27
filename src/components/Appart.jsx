@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Appart(props) {
 return (
+  
     <Link 
     to='/flat' 
     state={{
@@ -13,6 +14,7 @@ return (
     
   <div className='appart'>
   <img src={props.imageUrl} alt=""/>
+  
   <div className='apartment__subtitle'>{props.title}</div>
   </div>
   </Link>

@@ -21,6 +21,11 @@ const moveToPrevious = () => {
     setcurrentPicture(currentPicture - 1);
   }
 };
+const getPositionText = () => {
+  return `${currentPicture + 1}/${pictures.length}`;
+};
+// Vérifier si la longueur de la liste pictures est égale à 1
+const shouldShowButtons = pictures.length !== 1;
 
   return (
     <div className='image__appart__banner'>
@@ -29,12 +34,19 @@ const moveToPrevious = () => {
      <img  key={pic}  src={pic}  alt='' className={getClassName(i)}></img>
         ))}
       </div>
-      <button className='btn btn-next'>
-      <i class="fas fa-chevron-left" onClick={moveToNext}></i>
-      </button>
-      <button className='btn btn-previous'>
-      <i class="fas fa-chevron-right" onClick={moveToPrevious}></i>
-      </button>
+      <div className="image__position">{getPositionText()}</div>
+      {shouldShowButtons && (
+        <>
+        <div className="image__position">{getPositionText()}</div>
+        <button className='btn btn-next' onClick={moveToNext}>
+          <i className="fas fa-chevron-right"></i>
+        </button>
+        <button className='btn btn-previous' onClick={moveToPrevious}>
+          <i className="fas fa-chevron-left"></i>
+        </button>
+        </>
+    )}
+      
     </div>
   )
 }
