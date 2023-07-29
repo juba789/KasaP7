@@ -24,6 +24,7 @@
   
     .appart__owner__details{
       display: flex;
+      justify-content: end;
       gap:0.5rem; 
       @media screen and (max-width: 768px){
        order: 1; 

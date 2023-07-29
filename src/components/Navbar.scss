@@ -1,5 +1,5 @@
 @import '../scss/variables.scss';
-
+/*
 .navbar{
 display: flex;
 justify-content: space-between;
@@ -30,7 +30,69 @@ gap: 2rem;
     
     }
 }
+*/
 
+.navbar{
+    margin-top: 1rem;
+    padding-inline: 2rem 3rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+    
+    img{
+    
+        height: 50px;
+    }
+    
+    .navig{
+    gap:25px;
+    display: flex;
+    
+    }
+    
+  
+    a{
+        font-size: 20px;
+        text-decoration: none;
+        color: $color-primary;
+        &.active{
+    
+            text-decoration: underline;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+        
+        }
+    
+    
+    @media screen and (max-width: 768px) {
+        .navbar{
+            padding: 1rem;
+            
+        }
+        .navig{
+            gap:12px;
+           }
+
+        img{
+            height:35px;
+        }
+         a{
+            font-size: 15px;
+         }
+        
+        .accueil,
+        .apropos {
+          text-transform: uppercase;
+          
+        }
+      }
 
 
 
