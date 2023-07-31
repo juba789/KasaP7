@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 function AppartGrid() {
   const [appartements,setAppartemens] =useState([]);
   
-  useEffect(fetchAppartements,[]);
+useEffect( fetchAppartements,[]);
 
 function fetchAppartements(){ 
 fetch("db.json")

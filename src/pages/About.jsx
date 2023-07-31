@@ -1,14 +1,15 @@
 import React from 'react'
-import ImageAppartBanner from '../components/ImageAppartBanner'
 import Banner from '../layout/Banner'
 
 import './About.scss'
 import { DescriptionPanel } from '../components/DescriptionPanel'
 
 function About() {
+  const imageUrl = window.location.origin + '/BannerApropos.png';
+  console.log(imageUrl)
   return (
     <>
-    <Banner imageUrl='BannerApropos.png' title='' />
+    <Banner imageUrl={imageUrl} title='' />
     <div className='about__container'>
     <DescriptionPanel title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."/>
     <DescriptionPanel title="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de note plateforme."/>

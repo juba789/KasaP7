@@ -24,25 +24,28 @@ const HeaderFooterLayout=()=>{
 const router =createBrowserRouter ([
   {
     element:<HeaderFooterLayout/>,
-    errorElement:<ErrorPage/>,
+   errorElement:<ErrorPage/>,
     children:[
       {
         path:'/',
         element:<HomePage/>
       },
       {
-       path:'/flat',
+        
+       path: '/flat/:appartId',
        element:<AppartPage/>
       },
+      
       {
         path:'/about',
         element:<About />
 
       }
+     
+    
+    
     ]
 }
 ])
 
 export { router };
-
-  

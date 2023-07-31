@@ -16,18 +16,18 @@ function Navbar() {
         </NavLink>
    </nav>
  */ <nav className='navbar'>
-    <div class='navbar__logo'>
+    <div className='navbar__logo'>
       <NavLink to='/'>
-        <img src="LOGOKASA.png" />
+        <img src="/LOGOKASA.png" />
       </NavLink>
     </div>
-    <div class="navig">
-      <div class="accueil">
+    <div className="navig">
+      <div className="accueil">
         <NavLink to='/'>
           Accueil
         </NavLink>
       </div>
-      <div class="apropos">
+      <div className="apropos">
         <NavLink to='/about'>
           A propos
         </NavLink>

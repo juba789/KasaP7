@@ -13,6 +13,7 @@
         font-size: 3rem;
         border-width: 0;
         cursor: pointer;
+       
          &:active,
         &:focus {
          outline: none;
@@ -22,6 +23,10 @@
         }
         &.btn-previous{
             left:0;
+        }
+        @media screen and (max-width: 375px) {
+            font-size: 2rem;
+            width: 3rem;
         }
     }
     .image__container{

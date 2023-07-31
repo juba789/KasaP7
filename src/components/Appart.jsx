@@ -5,12 +5,7 @@ import { Link } from 'react-router-dom'
 function Appart(props) {
 return (
   
-    <Link 
-    to='/flat' 
-    state={{
-      appartId:props.id
-      }}
-    >
+  <Link to={`/flat/${props.id}`} state={{ appartId: props.id }}>
     
   <div className='appart'>
   <img src={props.imageUrl} alt=""/>
@@ -20,5 +15,7 @@ return (
   </Link>
   )
 }
+
+
 
 export default Appart

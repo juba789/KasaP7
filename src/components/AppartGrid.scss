@@ -11,12 +11,21 @@
     padding: 1rem;
     & > *{
         width: 32%;
+        height: 340px;
+        
         
      }
     
     }
     
-    
+  
+@media screen and (min-width: 768px) and (max-width: 930px) {
+    .grid {
+        & > * {
+            width: 45%;
+        }
+    }
+}  
   
 
 @media screen and (max-width: 768px) {
