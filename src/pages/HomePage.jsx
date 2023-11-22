@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomePage.scss";
-import Banner from "../layout/Banner";
+import Banner from "../components/Banner";
 import AppartGrid from "../components/AppartGrid";
 
 function HomePage() {
