@@ -1,44 +1,66 @@
-@import '../scss/variables.scss';
+@import "../scss/variables.scss";
 
-.grid{
-    min-height: 500px;
-    background-color:$grid-background;
-    border-radius: 25px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-    & > *{
-        width: 32%;
-        height: 340px;
-        
-        
-     }
-    
+.grid {
+  min-height: 500px;
+  background-color: $grid-background;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+
+  & > * {
+    width: 32%;
+    height: 340px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .grid {
+    & > * {
+      width: 47%;
     }
-    
-  
-@media screen and (min-width: 768px) and (max-width: 930px) {
-    .grid {
-        & > * {
-            width: 45%;
-        }
-    }
-}  
-  
+  }
+}
 
 @media screen and (max-width: 768px) {
-    .grid {
-        justify-content: center;
-        background-color:$grid-background-light;
-        padding: 0;
-        & > *{
-            width: 100%;
-           
-         }
+  .grid {
+    justify-content: center;
+    background-color: $grid-background-light;
+    padding: 0;
+    
+    & > * {
+      width: 100%;
     }
+  }
 }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

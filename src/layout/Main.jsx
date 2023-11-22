@@ -1,12 +1,10 @@
-import React from 'react'
-import './Main.scss'
+import React from "react";
+import "./Main.scss";
 
 function Main(props) {
-  const children =props.children
+  const children = props.children;
 
-  return (
-    <div className='main'>{children}</div>
-  )
+  return <div className="main">{children}</div>;
 }
 
-export default Main
+export default Main;

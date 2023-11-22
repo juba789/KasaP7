@@ -1,92 +1,95 @@
-@import '../scss/variables.scss';
+@import "../scss/variables.scss";
 
-.appart__header{
-    display: flex;
-    margin-bottom: 2rem;
-    gap:1rem;
-    @media screen and (max-width: 768px){
-      flex-direction: column;
+.appart__header {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 1rem;
 
-   }
-    .appart__title{
-      flex-grow: 1;
-    }
-   .appart__owner{
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .appart__title {
+    flex-grow: 1;
+  }
+
+  .appart__owner {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;       /*possibilité de mettre cette ligne uniquement dans le medias quéries*/
-    @media screen and (max-width: 768px){
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
       flex-direction: row;
-      
-
-   }
-   }
-  
-    .appart__owner__details{
-      display: flex;
-      justify-content: end;
-      gap:0.5rem; 
-      @media screen and (max-width: 768px){
-       order: 1; 
-       
-     }
-
     }
-
-    .appart__owner__badge img{
-     height: 50px;
-     width: 50px;
-     border-radius: 50%;
-     background-color: $grid-background;
-     
-    }
-    .appart__owner__stars{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 0.2rem;
-      color:$grid-background;
-      *{
-        font-size: 2rem;
-      }
-      
-       .on{
-        color: $color-primary;
-       }
-       
-    }
-    h1{
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 500;
-         margin-block: 0;
-         }
-         h2{
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 500;
-          margin-top:0.5em ;
-          margin-bottom: 0.2em;
-            
-         }
-    h3{
-      font-size: 18px;
-      display: flex;
-      flex-direction: column;
-       align-items: end;
-       font-weight: 500;
-      margin-block: 0;     /*equivaut à margin-top:0 et margin-bottom:0*/
-    }
-     .appart__tags{
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(100px,150px));
-      gap: 1rem;
-        span{
-         background: $color-primary;
-         color:$color-tertiary ;
-         padding:0.3em 0.5em;
-         border-radius: 0.7rem;
-         text-align: center;
-        }
   }
+
+  .appart__owner__details {
+    display: flex;
+    justify-content: flex-end; // end
+    gap: 0.5rem;
+
+    @media screen and (max-width: 768px) {
+      order: 1;
+    }
   }
+
+  .appart__owner__badge img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: $grid-background;
+  }
+
+  .appart__owner__stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    color: $grid-background;
+    * {
+      font-size: 2rem;
+    }
+
+    .on {
+      color: $color-primary;
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    margin-block: 0;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 0.3em;
+    margin-bottom: 1.3em;
+  }
+
+  h3 {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; // end
+    font-weight: 500;
+    margin-block: 0; /*equivaut à margin-top:0 et margin-bottom:0*/
+  }
+
+  .appart__tags {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+    gap: 1rem;
+    
+    span {
+      background: $color-primary;
+      color: $color-tertiary;
+      padding: 0.3em 0.5em;
+      border-radius: 0.7rem;
+      text-align: center;
+    }
+  }
+}

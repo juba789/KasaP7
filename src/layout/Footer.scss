@@ -1,4 +1,4 @@
-@import '../scss/variables.scss';
+@import "../scss/variables.scss";
 
 .footer {
   background-color: $footer-background;
@@ -12,6 +12,7 @@
   &__logo {
     img {
       width: 100px;
+      height: 40px;
     }
   }
 }

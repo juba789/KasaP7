@@ -1,8 +1,9 @@
-.main{
-padding-inline: 2rem 3rem;
-margin-bottom: 3rem;
-min-height: 60vh;
-@media screen and (max-width: 768px) {
-   padding:1rem;
-}
-}
+.main {
+   padding-inline: 2rem 3rem;
+   margin-bottom: 3rem;
+   min-height: 60vh;
+   
+   @media screen and (max-width: 768px) {
+     padding: 1rem;
+   }
+ }

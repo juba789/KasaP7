@@ -1,7 +1,10 @@
-.about__container{
-
-padding-inline: 3rem;  /* a verifier*/
-
-
-
-}
+.about__container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
