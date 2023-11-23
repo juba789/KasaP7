@@ -1,58 +1,58 @@
 @import "../scss/variables.scss";
+
 .navbar {
   margin-top: 1rem;
   padding-inline: 2rem 3rem;
-}
-
-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-img {
-  height: 50px;
-}
-
-.navig {
-  gap: 25px;
-  display: flex;
-}
-
-a {
-  font-size: 20px;
-  text-decoration: none;
-  color: $color-primary;
-
-  &.active {
-    text-decoration: underline;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    padding: 1rem;
-  }
-
-  .navig {
-    gap: 12px;
-  }
-
   img {
-    height: 35px;
+    height: 50px;
   }
-
+  .navig {
+    gap: 25px;
+    display: flex;
+  }
   a {
-    font-size: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: $color-primary;
+
+    &.active {
+      text-decoration: underline;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
-  
-  .accueil,
-  .apropos {
-    text-transform: uppercase;
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+
+    img {
+      height: 35px;
+    }
+    .navig {
+      gap: 12px;
+
+      .accueil,
+      .apropos {
+        a {
+          font-size: 15px;
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 }
+
+
+
+
+
+
+ 
+
+
+
 
