@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams ,Navigate } from "react-router-dom";
+import { useParams , Navigate } from "react-router-dom";
 import "./AppartPage.scss";
 import ImageAppartBanner from "../components/ImageAppartBanner";
 import AppartHeader from "../components/AppartHeader";
