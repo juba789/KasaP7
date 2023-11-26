@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams ,Navigate } from "react-router-dom";
 import "./AppartPage.scss";
 import ImageAppartBanner from "../components/ImageAppartBanner";
 import AppartHeader from "../components/AppartHeader";
 import { DescriptionPanel } from "../components/DescriptionPanel";
-import { Navigate } from "react-router-dom";
+
 
 function AppartPage() {
   const { appartId } = useParams();
